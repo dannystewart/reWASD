@@ -55,6 +55,20 @@
               "mode": "digital",
               "zoneClickRequired": false
             }
+          ],
+          "vibration": [
+            {
+              "motor": {
+                "name": "left",
+                "insteadTriggerLeft": true
+              }
+            },
+            {
+              "motor": {
+                "name": "right",
+                "insteadTriggerRight": true
+              }
+            }
           ]
         },
         "convertToVirtual": true

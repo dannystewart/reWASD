@@ -365,6 +365,25 @@
     {
       "condition": {
         "mask": {
+          "id": 4,
+          "activator": {
+            "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 63,
+            "description": "DIK_F5"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
           "id": 5,
           "activator": {
             "type": "single",
@@ -493,25 +512,6 @@
           "keyboard": {
             "buttonId": 1,
             "description": "DIK_ESCAPE"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 9,
-          "activator": {
-            "type": "long",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "keyboard": {
-            "buttonId": 63,
-            "description": "DIK_F5"
           }
         }
       ]

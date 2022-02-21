@@ -139,13 +139,23 @@
       "set": [
         {
           "deviceId": 1,
+          "buttonId": 10,
+          "description": "XB, Nintendo: RightStick / DS4, Stadia: R3"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "set": [
+        {
+          "deviceId": 1,
           "buttonId": 11,
           "description": "XB, Nintendo: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
         }
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "set": [
         {
           "deviceId": 1,
@@ -155,7 +165,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "set": [
         {
           "deviceId": 1,
@@ -165,7 +175,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 10,
       "set": [
         {
           "deviceId": 1,
@@ -175,7 +185,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 11,
       "set": [
         {
           "deviceId": 1,
@@ -185,7 +195,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 12,
       "set": [
         {
           "deviceId": 1,
@@ -195,7 +205,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 13,
       "set": [
         {
           "deviceId": 1,
@@ -205,7 +215,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 14,
       "set": [
         {
           "deviceId": 1,
@@ -215,7 +225,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 15,
       "set": [
         {
           "deviceId": 1,
@@ -483,6 +493,46 @@
         "mask": {
           "id": 6,
           "activator": {
+            "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 2,
+            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 6,
+          "activator": {
+            "type": "double",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 2,
+            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 7,
+          "activator": {
             "type": "single",
             "mode": "hold_until_release"
           }
@@ -500,7 +550,7 @@
     {
       "condition": {
         "mask": {
-          "id": 6,
+          "id": 7,
           "activator": {
             "type": "long",
             "mode": "hold_until_release"
@@ -512,26 +562,6 @@
           "keyboard": {
             "buttonId": 38,
             "description": "DIK_L"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 7,
-          "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 51,
-            "description": "BtnLeftTrigger"
           }
         }
       ]
@@ -568,6 +598,26 @@
       },
       "macros": [
         {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 51,
+            "description": "BtnLeftTrigger"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 10,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
           "keyboard": {
             "buttonId": 1,
             "description": "DIK_ESCAPE"
@@ -578,7 +628,7 @@
     {
       "condition": {
         "mask": {
-          "id": 9,
+          "id": 10,
           "activator": {
             "type": "long",
             "mode": "hold_until_release"
@@ -597,7 +647,7 @@
     {
       "condition": {
         "mask": {
-          "id": 10,
+          "id": 11,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -616,7 +666,7 @@
     {
       "condition": {
         "mask": {
-          "id": 11,
+          "id": 12,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -635,7 +685,7 @@
     {
       "condition": {
         "mask": {
-          "id": 12,
+          "id": 13,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -654,7 +704,7 @@
     {
       "condition": {
         "mask": {
-          "id": 12,
+          "id": 13,
           "activator": {
             "type": "long",
             "mode": "hold_until_release"

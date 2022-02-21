@@ -636,6 +636,51 @@
         "mask": {
           "id": 10,
           "activator": {
+            "type": "long",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 63,
+            "description": "DIK_F5",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 63,
+            "description": "DIK_F5",
+            "action": "up"
+          }
+        },
+        {
+          "rumble": {
+            "duration": 150,
+            "amplitude": {
+              "motor": {
+                "left": 80,
+                "right": 80
+              },
+              "trigger": {
+                "left": 60,
+                "right": 60
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 10,
+          "activator": {
             "type": "double",
             "mode": "hold_until_release"
           }

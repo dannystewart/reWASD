@@ -231,6 +231,29 @@
         "mask": {
           "id": 1,
           "activator": {
+            "type": "single",
+            "mode": "turbo",
+            "params": {
+              "pause": 100
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 3,
+            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
             "type": "triple",
             "mode": "onetime",
             "params": {

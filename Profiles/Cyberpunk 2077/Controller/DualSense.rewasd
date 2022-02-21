@@ -52,10 +52,12 @@
           "triggers": [
             {
               "name": "left",
-              "adaptiveDescription": "Max Rigidity",
-              "adaptiveMode": 1,
+              "adaptiveDescription": "Rifle",
+              "adaptiveMode": 38,
               "adaptiveStartResistance": 0,
-              "adaptiveForce": 220
+              "adaptiveForce": 255,
+              "adaptiveStrength": 255,
+              "adaptiveFrequency": 10
             }
           ],
           "touchpads": [

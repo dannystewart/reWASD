@@ -540,7 +540,10 @@
           "id": 7,
           "activator": {
             "type": "single",
-            "mode": "hold_until_release"
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
           }
         }
       },
@@ -548,7 +551,30 @@
         {
           "keyboard": {
             "buttonId": 21,
-            "description": "DIK_Y"
+            "description": "DIK_Y",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 21,
+            "description": "DIK_Y",
+            "action": "up"
+          }
+        },
+        {
+          "rumble": {
+            "duration": 100,
+            "amplitude": {
+              "motor": {
+                "left": 80,
+                "right": 80
+              },
+              "trigger": {
+                "left": 60,
+                "right": 60
+              }
+            }
           }
         }
       ]
@@ -559,7 +585,10 @@
           "id": 7,
           "activator": {
             "type": "long",
-            "mode": "hold_until_release"
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
           }
         }
       },
@@ -567,7 +596,30 @@
         {
           "keyboard": {
             "buttonId": 38,
-            "description": "DIK_L"
+            "description": "DIK_L",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 38,
+            "description": "DIK_L",
+            "action": "up"
+          }
+        },
+        {
+          "rumble": {
+            "duration": 100,
+            "amplitude": {
+              "motor": {
+                "left": 80,
+                "right": 80
+              },
+              "trigger": {
+                "left": 60,
+                "right": 60
+              }
+            }
           }
         }
       ]

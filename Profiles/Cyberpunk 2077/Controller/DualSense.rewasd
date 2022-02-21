@@ -52,10 +52,11 @@
           "triggers": [
             {
               "name": "left",
-              "adaptiveDescription": "Half Press",
-              "adaptiveMode": 1,
-              "adaptiveStartResistance": 85,
-              "adaptiveForce": 100
+              "adaptiveDescription": "Full Press",
+              "adaptiveMode": 2,
+              "adaptiveStartResistance": 144,
+              "adaptiveEndResistance": 160,
+              "adaptiveForce": 255
             }
           ],
           "touchpads": [

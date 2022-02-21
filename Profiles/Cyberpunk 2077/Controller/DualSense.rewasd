@@ -636,7 +636,26 @@
         "mask": {
           "id": 10,
           "activator": {
-            "type": "long",
+            "type": "double",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 207,
+            "description": "DIK_END"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 10,
+          "activator": {
+            "type": "triple",
             "mode": "hold_until_release"
           }
         }
@@ -665,6 +684,25 @@
           "keyboard": {
             "buttonId": 36,
             "description": "DIK_J"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 11,
+          "activator": {
+            "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 21,
+            "description": "DIK_Y"
           }
         }
       ]
@@ -713,6 +751,25 @@
           "id": 13,
           "activator": {
             "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 38,
+            "description": "DIK_L"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 13,
+          "activator": {
+            "type": "triple",
             "mode": "hold_until_release"
           }
         }

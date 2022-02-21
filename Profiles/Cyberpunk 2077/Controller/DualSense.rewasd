@@ -52,9 +52,9 @@
           "triggers": [
             {
               "name": "left",
-              "adaptiveDescription": "Full Press",
+              "adaptiveDescription": "Soft Press",
               "adaptiveMode": 2,
-              "adaptiveStartResistance": 144,
+              "adaptiveStartResistance": 112,
               "adaptiveEndResistance": 160,
               "adaptiveForce": 255
             }

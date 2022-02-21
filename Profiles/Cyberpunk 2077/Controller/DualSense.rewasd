@@ -746,8 +746,8 @@
       "macros": [
         {
           "keyboard": {
-            "buttonId": 21,
-            "description": "DIK_Y"
+            "buttonId": 38,
+            "description": "DIK_L"
           }
         }
       ]
@@ -796,6 +796,25 @@
           "id": 13,
           "activator": {
             "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 21,
+            "description": "DIK_Y"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 13,
+          "activator": {
+            "type": "double",
             "mode": "hold_until_release"
           }
         }

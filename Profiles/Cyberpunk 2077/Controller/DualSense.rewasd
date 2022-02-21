@@ -264,6 +264,43 @@
         "mask": {
           "id": 1,
           "activator": {
+            "type": "double",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 3,
+            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y",
+            "action": "down"
+          }
+        },
+        {
+          "pause": {
+            "value": 1000
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 3,
+            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
             "type": "triple",
             "mode": "onetime",
             "params": {

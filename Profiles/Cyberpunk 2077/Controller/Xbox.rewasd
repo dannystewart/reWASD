@@ -441,7 +441,7 @@
         },
         {
           "rumble": {
-            "duration": 50,
+            "duration": 100,
             "amplitude": {
               "motor": {
                 "left": 80,

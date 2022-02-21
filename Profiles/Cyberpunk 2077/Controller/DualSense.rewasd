@@ -58,11 +58,8 @@
                   "x": 9240
                 }
               ],
-              "adaptiveDescription": "Pulse",
-              "adaptiveMode": 2,
-              "adaptiveStartResistance": 0,
-              "adaptiveEndResistance": 0,
-              "adaptiveForce": 0
+              "adaptiveDescription": "Choppy",
+              "adaptiveMode": 33
             }
           ],
           "touchpads": [

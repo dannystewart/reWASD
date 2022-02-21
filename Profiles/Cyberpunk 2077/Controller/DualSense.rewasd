@@ -212,6 +212,25 @@
     {
       "condition": {
         "mask": {
+          "id": 3,
+          "activator": {
+            "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 63,
+            "description": "DIK_F5"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
           "id": 4,
           "activator": {
             "type": "single",

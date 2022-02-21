@@ -9,7 +9,13 @@
     "minTimeUnit": 1
   },
   "devices": {
-    "hardware": [],
+    "hardware": [
+      {
+        "id": 1,
+        "name": "gamepad",
+        "convertToVirtual": true
+      }
+    ],
     "virtual": {
       "gamepads": [
         {

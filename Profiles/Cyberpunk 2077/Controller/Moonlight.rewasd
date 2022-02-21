@@ -233,31 +233,15 @@
           "id": 2,
           "activator": {
             "type": "single",
-            "mode": "onetime",
-            "params": {
-              "expert": true
-            }
+            "mode": "hold_until_release"
           }
         }
       },
       "macros": [
         {
-          "pause": {
-            "value": 150
-          }
-        },
-        {
           "keyboard": {
             "buttonId": 1,
-            "description": "DIK_ESCAPE",
-            "action": "down"
-          }
-        },
-        {
-          "keyboard": {
-            "buttonId": 1,
-            "description": "DIK_ESCAPE",
-            "action": "up"
+            "description": "DIK_ESCAPE"
           }
         }
       ]

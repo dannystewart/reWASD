@@ -75,13 +75,23 @@
       "set": [
         {
           "deviceId": 1,
+          "buttonId": 3,
+          "description": "XB, Stadia: X / DS4: Square / Nintendo: Y"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
           "buttonId": 5,
           "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
         }
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "set": [
         {
           "deviceId": 1,
@@ -91,7 +101,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "set": [
         {
           "deviceId": 1,
@@ -101,7 +111,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "set": [
         {
           "deviceId": 1,
@@ -111,7 +121,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "set": [
         {
           "deviceId": 1,
@@ -121,7 +131,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "set": [
         {
           "deviceId": 1,
@@ -131,7 +141,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "set": [
         {
           "deviceId": 1,
@@ -146,6 +156,43 @@
       "condition": {
         "mask": {
           "id": 1,
+          "activator": {
+            "type": "triple",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 3,
+            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y",
+            "action": "down"
+          }
+        },
+        {
+          "pause": {
+            "value": 500
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 3,
+            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
           "activator": {
             "type": "double",
             "mode": "toggle"
@@ -165,7 +212,7 @@
     {
       "condition": {
         "mask": {
-          "id": 2,
+          "id": 3,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -184,7 +231,7 @@
     {
       "condition": {
         "mask": {
-          "id": 2,
+          "id": 3,
           "activator": {
             "type": "long",
             "mode": "hold_until_release"
@@ -203,7 +250,7 @@
     {
       "condition": {
         "mask": {
-          "id": 3,
+          "id": 4,
           "activator": {
             "type": "double",
             "mode": "toggle"
@@ -223,7 +270,7 @@
     {
       "condition": {
         "mask": {
-          "id": 4,
+          "id": 5,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -242,7 +289,7 @@
     {
       "condition": {
         "mask": {
-          "id": 4,
+          "id": 5,
           "activator": {
             "type": "long",
             "mode": "hold_until_release"
@@ -261,7 +308,7 @@
     {
       "condition": {
         "mask": {
-          "id": 5,
+          "id": 6,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -280,7 +327,7 @@
     {
       "condition": {
         "mask": {
-          "id": 6,
+          "id": 7,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -299,7 +346,7 @@
     {
       "condition": {
         "mask": {
-          "id": 7,
+          "id": 8,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"

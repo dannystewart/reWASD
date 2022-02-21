@@ -53,7 +53,7 @@
             {
               "id": 1,
               "mode": "digital",
-              "zoneClickRequired": true
+              "zoneClickRequired": false
             }
           ]
         },
@@ -64,7 +64,7 @@
       "gamepads": [
         {
           "id": 1,
-          "type": "ds4"
+          "type": "xboxonebt"
         }
       ]
     }

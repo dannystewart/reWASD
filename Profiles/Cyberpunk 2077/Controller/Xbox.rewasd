@@ -596,8 +596,8 @@
         {
           "gamepad": {
             "id": 1,
-            "buttonId": 10,
-            "description": "XB, Nintendo: RightStick / DS4, Stadia: R3"
+            "buttonId": 9,
+            "description": "XB, Nintendo: LeftStick / DS4, Stadia: L3"
           }
         }
       ]

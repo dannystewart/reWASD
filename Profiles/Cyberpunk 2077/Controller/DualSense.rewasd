@@ -49,24 +49,6 @@
         "id": 1,
         "name": "gamepad",
         "default": {
-          "triggers": [
-            {
-              "name": "left",
-              "adaptiveDescription": "Medium Press",
-              "adaptiveMode": 2,
-              "adaptiveStartResistance": 69,
-              "adaptiveEndResistance": 160,
-              "adaptiveForce": 255
-            },
-            {
-              "name": "right",
-              "adaptiveDescription": "Hard Press",
-              "adaptiveMode": 2,
-              "adaptiveStartResistance": 32,
-              "adaptiveEndResistance": 160,
-              "adaptiveForce": 255
-            }
-          ],
           "touchpads": [
             {
               "id": 1,

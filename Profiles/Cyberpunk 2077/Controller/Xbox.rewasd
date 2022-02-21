@@ -587,26 +587,6 @@
         "mask": {
           "id": 4,
           "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 9,
-            "description": "XB, Nintendo: LeftStick / DS4, Stadia: L3"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 4,
-          "activator": {
             "type": "double",
             "mode": "hold_until_release"
           }

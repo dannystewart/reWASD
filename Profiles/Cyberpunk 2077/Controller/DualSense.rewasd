@@ -846,6 +846,42 @@
       "condition": {
         "hardware": {
           "deviceId": 1,
+          "buttonId": 7,
+          "description": "XB: View / XB360: Back / DS4: Share / Nintendo: Minus / DS3: Select / Stadia: Options / NvidiaShield: Back / SNES: Select"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 8,
+          "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 11,
+          "description": "XB, Nintendo: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 1,
           "buttonId": 99,
           "description": "Left TrackPad click / DS4, NvidiaShield: TouchPadClick"
         }

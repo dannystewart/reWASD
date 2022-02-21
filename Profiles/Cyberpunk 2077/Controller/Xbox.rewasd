@@ -414,6 +414,51 @@
     {
       "condition": {
         "mask": {
+          "id": 2,
+          "activator": {
+            "type": "long",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 63,
+            "description": "DIK_F5",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 63,
+            "description": "DIK_F5",
+            "action": "up"
+          }
+        },
+        {
+          "rumble": {
+            "duration": 50,
+            "amplitude": {
+              "motor": {
+                "left": 80,
+                "right": 80
+              },
+              "trigger": {
+                "left": 60,
+                "right": 60
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
           "id": 3,
           "activator": {
             "type": "single",

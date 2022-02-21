@@ -635,8 +635,8 @@
       "macros": [
         {
           "keyboard": {
-            "buttonId": 21,
-            "description": "DIK_Y"
+            "buttonId": 38,
+            "description": "DIK_L"
           }
         }
       ]
@@ -654,8 +654,8 @@
       "macros": [
         {
           "keyboard": {
-            "buttonId": 38,
-            "description": "DIK_L"
+            "buttonId": 21,
+            "description": "DIK_Y"
           }
         }
       ]

@@ -71,7 +71,7 @@
             {
               "id": 1,
               "mode": "digital",
-              "zoneClickRequired": true
+              "zoneClickRequired": false
             }
           ]
         },

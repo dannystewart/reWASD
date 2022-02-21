@@ -49,17 +49,6 @@
         "id": 1,
         "name": "gamepad",
         "default": {
-          "triggers": [
-            {
-              "name": "left",
-              "adaptiveDescription": "Rifle",
-              "adaptiveMode": 38,
-              "adaptiveStartResistance": 0,
-              "adaptiveForce": 255,
-              "adaptiveStrength": 255,
-              "adaptiveFrequency": 10
-            }
-          ],
           "touchpads": [
             {
               "id": 1,

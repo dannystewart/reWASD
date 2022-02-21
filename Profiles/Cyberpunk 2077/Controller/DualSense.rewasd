@@ -71,7 +71,7 @@
             {
               "id": 1,
               "mode": "digital",
-              "zoneClickRequired": false
+              "zoneClickRequired": true
             }
           ]
         },
@@ -205,6 +205,26 @@
           "deviceId": 1,
           "buttonId": 94,
           "description": "Left TrackPad right"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 99,
+          "description": "Left TrackPad click / DS4, NvidiaShield: TouchPadClick"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 163,
+          "description": "Left TrackPad tap"
         }
       ]
     }
@@ -610,6 +630,30 @@
           }
         }
       ]
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 99,
+          "description": "Left TrackPad click / DS4, NvidiaShield: TouchPadClick"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 163,
+          "description": "Left TrackPad tap"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
     }
   ]
 }

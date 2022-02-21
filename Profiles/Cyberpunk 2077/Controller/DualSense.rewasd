@@ -52,12 +52,17 @@
           "triggers": [
             {
               "name": "left",
-              "adaptiveDescription": "Vibration",
-              "adaptiveMode": 38,
-              "adaptiveStartResistance": 30,
-              "adaptiveForce": 255,
-              "adaptiveStrength": 220,
-              "adaptiveFrequency": 30
+              "zones": [
+                {
+                  "name": "med",
+                  "x": 9240
+                }
+              ],
+              "adaptiveDescription": "Pulse",
+              "adaptiveMode": 2,
+              "adaptiveStartResistance": 0,
+              "adaptiveEndResistance": 0,
+              "adaptiveForce": 0
             }
           ],
           "touchpads": [

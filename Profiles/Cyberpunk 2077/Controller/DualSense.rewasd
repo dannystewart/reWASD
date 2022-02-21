@@ -658,6 +658,21 @@
               }
             }
           }
+        },
+        {
+          "rumble": {
+            "duration": 50,
+            "amplitude": {
+              "motor": {
+                "left": 80,
+                "right": 80
+              },
+              "trigger": {
+                "left": 60,
+                "right": 60
+              }
+            }
+          }
         }
       ]
     },

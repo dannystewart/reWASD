@@ -55,20 +55,6 @@
               "mode": "digital",
               "zoneClickRequired": true
             }
-          ],
-          "vibration": [
-            {
-              "motor": {
-                "name": "left",
-                "insteadMotorRight": true
-              }
-            },
-            {
-              "motor": {
-                "name": "right",
-                "insteadMotorLeft": true
-              }
-            }
           ]
         },
         "convertToVirtual": true
@@ -78,7 +64,7 @@
       "gamepads": [
         {
           "id": 1,
-          "type": "ds4"
+          "type": "xboxonebt"
         }
       ]
     }

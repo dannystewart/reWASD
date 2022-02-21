@@ -1,0 +1,1029 @@
+{
+  "schemaVersion": 3.0,
+  "appVersion": "6.0.1",
+  "config": {
+    "appName": "Cyberpunk 2077",
+    "processNames": [
+      "Cyberpunk2077.exe"
+    ],
+    "led": {
+      "default": {
+        "mode": "solid",
+        "colors": [
+          [
+            255,
+            0,
+            255
+          ]
+        ],
+        "loop": true
+      },
+      "shifts": [
+        {
+          "shiftId": 1,
+          "mode": "heartbeat",
+          "colors": [
+            [
+              250,
+              246,
+              0
+            ]
+          ],
+          "loop": true
+        },
+        {
+          "shiftId": 2,
+          "mode": "solid",
+          "colors": [
+            [
+              240,
+              100,
+              20
+            ]
+          ],
+          "loop": true
+        },
+        {
+          "shiftId": 3,
+          "mode": "solid",
+          "loop": true
+        },
+        {
+          "shiftId": 4,
+          "mode": "solid",
+          "loop": true
+        }
+      ]
+    },
+    "minTimeUnit": 1
+  },
+  "devices": {
+    "hardware": [
+      {
+        "id": 1,
+        "name": "gamepad",
+        "convertToVirtual": true
+      }
+    ],
+    "virtual": {
+      "gamepads": [
+        {
+          "id": 1,
+          "type": "xboxonebt"
+        }
+      ]
+    }
+  },
+  "shifts": [
+    {
+      "id": 1,
+      "type": "default"
+    }
+  ],
+  "masks": [
+    {
+      "id": 1,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 4,
+          "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 7,
+          "description": "XB: View / XB360: Back / DS4: Share / Nintendo: Minus / DS3: Select / Stadia: Options / NvidiaShield: Back / SNES: Select"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 8,
+          "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 10,
+          "description": "XB, Nintendo: RightStick / DS4, Stadia: R3"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 11,
+          "description": "XB, Nintendo: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 31,
+          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 32,
+          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 5,
+          "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 32,
+          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 31,
+          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 4,
+          "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 5,
+          "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 8,
+          "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 7,
+          "description": "XB: View / XB360: Back / DS4: Share / Nintendo: Minus / DS3: Select / Stadia: Options / NvidiaShield: Back / SNES: Select"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 8,
+          "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 7,
+          "description": "XB: View / XB360: Back / DS4: Share / Nintendo: Minus / DS3: Select / Stadia: Options / NvidiaShield: Back / SNES: Select"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 7,
+          "description": "XB: View / XB360: Back / DS4: Share / Nintendo: Minus / DS3: Select / Stadia: Options / NvidiaShield: Back / SNES: Select"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 8,
+          "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 2,
+          "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 2,
+          "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR"
+        },
+        {
+          "deviceId": 1,
+          "buttonId": 3,
+          "description": "XB, Stadia: X / DS4: Square / Nintendo: Y"
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 48,
+            "description": "DIK_B"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 4,
+            "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "long",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 63,
+            "description": "DIK_F5",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 63,
+            "description": "DIK_F5",
+            "action": "up"
+          }
+        },
+        {
+          "rumble": {
+            "duration": 150,
+            "amplitude": {
+              "motor": {
+                "left": 80,
+                "right": 80
+              },
+              "trigger": {
+                "left": 60,
+                "right": 60
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 3,
+          "activator": {
+            "type": "single",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 8,
+            "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start",
+            "action": "down"
+          }
+        },
+        {
+          "pause": {
+            "value": 50
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 8,
+            "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 3,
+          "activator": {
+            "type": "long",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "pause": {
+            "value": 200
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 50,
+            "description": "DIK_M",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 50,
+            "description": "DIK_M",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 3,
+          "activator": {
+            "type": "double",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 24,
+            "description": "DIK_O",
+            "action": "down"
+          }
+        },
+        {
+          "pause": {
+            "value": 200
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 24,
+            "description": "DIK_O",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 3,
+          "activator": {
+            "type": "triple",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 36,
+            "description": "DIK_J"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 4,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 10,
+            "description": "XB, Nintendo: RightStick / DS4, Stadia: R3"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 4,
+          "activator": {
+            "type": "double",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 2,
+            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 5,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 21,
+            "description": "DIK_Y"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 5,
+          "activator": {
+            "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 38,
+            "description": "DIK_L"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 6,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 5,
+            "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 7,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 9,
+            "description": "XB, Nintendo: LeftStick / DS4, Stadia: L3"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 8,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 9,
+          "activator": {
+            "type": "single",
+            "mode": "toggle"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 5,
+            "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 10,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 207,
+            "description": "DIK_END"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 11,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 199,
+            "description": "DIK_HOME"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 12,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 4,
+            "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 13,
+          "activator": {
+            "type": "single",
+            "mode": "toggle"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 5,
+            "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 14,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 24,
+            "description": "DIK_O"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 15,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 37,
+            "description": "DIK_K"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 16,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 25,
+            "description": "DIK_P"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 17,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 36,
+            "description": "DIK_J"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 18,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 36,
+            "description": "DIK_J"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 19,
+          "activator": {
+            "type": "single",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 20,
+          "activator": {
+            "type": "single",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 21,
+          "activator": {
+            "type": "single",
+            "mode": "turbo",
+            "params": {
+              "pause": 100
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 3,
+            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y"
+          }
+        }
+      ]
+    }
+  ]
+}

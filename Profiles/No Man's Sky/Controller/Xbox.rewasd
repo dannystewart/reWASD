@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 3.0,
+  "appVersion": "6.0.1",
+  "config": {
+    "appName": "No Man's Sky",
+    "processNames": [
+      "NMS.exe"
+    ],
+    "minTimeUnit": 1
+  },
+  "devices": {
+    "hardware": [
+      {
+        "id": 1,
+        "name": "gamepad",
+        "convertToVirtual": true
+      }
+    ],
+    "virtual": {
+      "gamepads": [
+        {
+          "id": 1,
+          "type": "xboxonebt"
+        }
+      ]
+    }
+  }
+}

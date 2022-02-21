@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3.0,
+  "appVersion": "6.0.1",
+  "config": {
+    "appName": "Cyberpunk 2077",
+    "processNames": [
+      "Cyberpunk2077.exe"
+    ],
+    "minTimeUnit": 1
+  },
+  "devices": {
+    "hardware": [],
+    "virtual": {
+      "gamepads": [
+        {
+          "id": 1,
+          "type": "xboxonebt"
+        }
+      ]
+    }
+  }
+}

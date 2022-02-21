@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 3.0,
+  "appVersion": "6.0.1",
+  "config": {
+    "appName": "Cyberpunk 2077",
+    "processNames": [
+      "Cyberpunk2077.exe"
+    ],
+    "led": {
+      "default": {
+        "mode": "solid",
+        "colors": [
+          [
+            255,
+            0,
+            255
+          ]
+        ],
+        "loop": true
+      },
+      "shifts": [
+        {
+          "shiftId": 1,
+          "mode": "solid",
+          "loop": true
+        },
+        {
+          "shiftId": 2,
+          "mode": "solid",
+          "loop": true
+        },
+        {
+          "shiftId": 3,
+          "mode": "solid",
+          "loop": true
+        },
+        {
+          "shiftId": 4,
+          "mode": "solid",
+          "loop": true
+        }
+      ]
+    },
+    "minTimeUnit": 1
+  },
+  "devices": {
+    "hardware": [],
+    "virtual": {
+      "gamepads": [
+        {
+          "id": 1,
+          "type": "xboxonebt"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 3.0,
+  "appVersion": "6.0.1",
+  "config": {
+    "appName": "Dying Light 2",
+    "processNames": [
+      "DyingLightGame_x64_rwdi.exe"
+    ],
+    "led": {
+      "default": {
+        "mode": "solid",
+        "colors": [
+          [
+            0,
+            100,
+            200
+          ]
+        ],
+        "loop": true
+      },
+      "shifts": [
+        {
+          "shiftId": 1,
+          "mode": "solid",
+          "loop": true
+        },
+        {
+          "shiftId": 2,
+          "mode": "solid",
+          "loop": true
+        },
+        {
+          "shiftId": 3,
+          "mode": "solid",
+          "loop": true
+        },
+        {
+          "shiftId": 4,
+          "mode": "solid",
+          "loop": true
+        }
+      ]
+    },
+    "minTimeUnit": 1
+  },
+  "devices": {
+    "hardware": [
+      {
+        "id": 1,
+        "name": "gamepad",
+        "convertToVirtual": true
+      }
+    ],
+    "virtual": {
+      "gamepads": [
+        {
+          "id": 1,
+          "type": "ds4",
+          "default": {
+            "sticks": [
+              {
+                "name": "right",
+                "initialSpeed": 6
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "masks": [
+    {
+      "id": 1,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 31,
+          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 32,
+          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 99,
+          "description": "Left TrackPad click / DS4, NvidiaShield: TouchPadClick"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 163,
+          "description": "Left TrackPad tap"
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 2,
+            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 3,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "rumble": {
+            "duration": 250,
+            "amplitude": {
+              "motor": {
+                "left": 20,
+                "right": 20
+              }
+            }
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 6,
+            "description": "XB: RightShoulder / DS4, Stadia: R1 / Nintendo: R"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 4,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "rumble": {
+            "duration": 400,
+            "amplitude": {
+              "motor": {
+                "right": 30
+              }
+            }
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 10,
+            "description": "XB, Nintendo: RightStick / DS4, Stadia: R3"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 5,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 8,
+            "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 6,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 7,
+            "description": "XB: View / XB360: Back / DS4: Share / Nintendo: Minus / DS3: Select / Stadia: Options / NvidiaShield: Back / SNES: Select"
+          }
+        }
+      ]
+    }
+  ]
+}

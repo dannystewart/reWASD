@@ -48,6 +48,15 @@
       {
         "id": 1,
         "name": "gamepad",
+        "default": {
+          "touchpads": [
+            {
+              "id": 1,
+              "mode": "digital",
+              "zoneClickRequired": true
+            }
+          ]
+        },
         "convertToVirtual": true
       }
     ],
@@ -59,5 +68,203 @@
         }
       ]
     }
-  }
+  },
+  "masks": [
+    {
+      "id": 1,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 5,
+          "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 11,
+          "description": "XB, Nintendo: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 91,
+          "description": "Left TrackPad up"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 92,
+          "description": "Left TrackPad down"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 93,
+          "description": "Left TrackPad left"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 94,
+          "description": "Left TrackPad right"
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "double",
+            "mode": "toggle"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 5,
+            "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 21,
+            "description": "DIK_Y"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 38,
+            "description": "DIK_L"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 3,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 4,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 36,
+            "description": "DIK_J"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 5,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 37,
+            "description": "DIK_K"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 6,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 24,
+            "description": "DIK_O"
+          }
+        }
+      ]
+    }
+  ]
 }

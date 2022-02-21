@@ -52,12 +52,12 @@
           "triggers": [
             {
               "name": "left",
-              "adaptiveDescription": "Rifle",
+              "adaptiveDescription": "Vibration",
               "adaptiveMode": 38,
-              "adaptiveStartResistance": 0,
+              "adaptiveStartResistance": 30,
               "adaptiveForce": 255,
-              "adaptiveStrength": 255,
-              "adaptiveFrequency": 10
+              "adaptiveStrength": 220,
+              "adaptiveFrequency": 30
             }
           ],
           "touchpads": [

@@ -519,6 +519,25 @@
     {
       "condition": {
         "mask": {
+          "id": 9,
+          "activator": {
+            "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 199,
+            "description": "DIK_HOME"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
           "id": 10,
           "activator": {
             "type": "single",
@@ -569,6 +588,25 @@
           "keyboard": {
             "buttonId": 24,
             "description": "DIK_O"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 12,
+          "activator": {
+            "type": "long",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 207,
+            "description": "DIK_END"
           }
         }
       ]

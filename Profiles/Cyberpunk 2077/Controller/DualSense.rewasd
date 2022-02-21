@@ -493,26 +493,6 @@
         "mask": {
           "id": 6,
           "activator": {
-            "type": "long",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 2,
-            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 6,
-          "activator": {
             "type": "double",
             "mode": "hold_until_release"
           }

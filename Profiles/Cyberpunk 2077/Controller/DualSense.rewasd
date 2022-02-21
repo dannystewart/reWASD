@@ -660,6 +660,11 @@
           }
         },
         {
+          "pause": {
+            "value": 50
+          }
+        },
+        {
           "rumble": {
             "duration": 50,
             "amplitude": {

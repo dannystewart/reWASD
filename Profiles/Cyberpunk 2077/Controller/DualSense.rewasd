@@ -52,8 +52,10 @@
           "triggers": [
             {
               "name": "left",
-              "adaptiveDescription": "Choppy",
-              "adaptiveMode": 33
+              "adaptiveDescription": "Soft Rigidity",
+              "adaptiveMode": 1,
+              "adaptiveStartResistance": 0,
+              "adaptiveForce": 0
             }
           ],
           "touchpads": [

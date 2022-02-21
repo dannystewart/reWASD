@@ -241,10 +241,10 @@
         "mask": {
           "id": 1,
           "activator": {
-            "type": "single",
+            "type": "long",
             "mode": "turbo",
             "params": {
-              "pause": 50
+              "pause": 100
             }
           }
         }

@@ -169,13 +169,53 @@
       "set": [
         {
           "deviceId": 1,
+          "buttonId": 68,
+          "description": "Gyroscope up"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 69,
+          "description": "Gyroscope down"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 70,
+          "description": "Gyroscope left"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 71,
+          "description": "Gyroscope right"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "set": [
+        {
+          "deviceId": 1,
           "buttonId": 91,
           "description": "Left TrackPad up"
         }
       ]
     },
     {
-      "id": 10,
+      "id": 14,
       "set": [
         {
           "deviceId": 1,
@@ -185,7 +225,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 15,
       "set": [
         {
           "deviceId": 1,
@@ -195,7 +235,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 16,
       "set": [
         {
           "deviceId": 1,
@@ -205,7 +245,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 17,
       "set": [
         {
           "deviceId": 1,
@@ -215,7 +255,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 18,
       "set": [
         {
           "deviceId": 1,
@@ -525,6 +565,94 @@
       },
       "macros": [
         {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 47,
+            "description": "RightStickUp",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 10,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 48,
+            "description": "RightStickDown",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 11,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 49,
+            "description": "RightStickLeft",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 12,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 50,
+            "description": "RightStickRight",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 13,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
           "keyboard": {
             "buttonId": 1,
             "description": "DIK_ESCAPE"
@@ -535,7 +663,7 @@
     {
       "condition": {
         "mask": {
-          "id": 9,
+          "id": 13,
           "activator": {
             "type": "long",
             "mode": "hold_until_release"
@@ -554,7 +682,7 @@
     {
       "condition": {
         "mask": {
-          "id": 10,
+          "id": 14,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -573,7 +701,7 @@
     {
       "condition": {
         "mask": {
-          "id": 11,
+          "id": 15,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -592,7 +720,7 @@
     {
       "condition": {
         "mask": {
-          "id": 12,
+          "id": 16,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -611,7 +739,7 @@
     {
       "condition": {
         "mask": {
-          "id": 12,
+          "id": 16,
           "activator": {
             "type": "long",
             "mode": "hold_until_release"

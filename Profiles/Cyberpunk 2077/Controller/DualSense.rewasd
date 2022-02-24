@@ -149,8 +149,8 @@
       "set": [
         {
           "deviceId": 1,
-          "buttonId": 11,
-          "description": "XB, Nintendo: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+          "buttonId": 13,
+          "description": "XB: Share / DualSense: Mic / Stadia: Assistant / NvidiaShield: Home"
         }
       ]
     },
@@ -237,6 +237,7 @@
   ],
   "mappings": [
     {
+      "description": "Rapid Pickup",
       "condition": {
         "mask": {
           "id": 1,
@@ -297,43 +298,7 @@
       ]
     },
     {
-      "condition": {
-        "mask": {
-          "id": 1,
-          "activator": {
-            "type": "triple",
-            "mode": "onetime",
-            "params": {
-              "expert": true
-            }
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 3,
-            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y",
-            "action": "down"
-          }
-        },
-        {
-          "pause": {
-            "value": 1000
-          }
-        },
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 3,
-            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y",
-            "action": "up"
-          }
-        }
-      ]
-    },
-    {
+      "description": "Holster/Unholster",
       "condition": {
         "mask": {
           "id": 2,
@@ -353,6 +318,7 @@
       ]
     },
     {
+      "description": "Y",
       "condition": {
         "mask": {
           "id": 2,
@@ -364,15 +330,15 @@
       },
       "macros": [
         {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 4,
-            "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU"
           }
         }
       ]
     },
     {
+      "description": "Y",
       "condition": {
         "mask": {
           "id": 2,
@@ -393,43 +359,7 @@
       ]
     },
     {
-      "condition": {
-        "mask": {
-          "id": 2,
-          "activator": {
-            "type": "triple",
-            "mode": "onetime",
-            "params": {
-              "expert": true
-            }
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 4,
-            "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X",
-            "action": "down"
-          }
-        },
-        {
-          "pause": {
-            "value": 1000
-          }
-        },
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 4,
-            "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X",
-            "action": "up"
-          }
-        }
-      ]
-    },
-    {
+      "description": "Toggle Scanner",
       "condition": {
         "mask": {
           "id": 3,
@@ -450,6 +380,7 @@
       ]
     },
     {
+      "description": "Esc",
       "condition": {
         "mask": {
           "id": 4,
@@ -469,6 +400,7 @@
       ]
     },
     {
+      "description": "Quicksave",
       "condition": {
         "mask": {
           "id": 4,
@@ -518,46 +450,106 @@
         "mask": {
           "id": 5,
           "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
+            "type": "long",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
           }
         }
       },
       "macros": [
         {
+          "pause": {
+            "value": 100
+          }
+        },
+        {
           "keyboard": {
-            "buttonId": 23,
-            "description": "DIK_I"
+            "buttonId": 50,
+            "description": "DIK_M",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 50,
+            "description": "DIK_M",
+            "action": "up"
           }
         }
       ]
     },
     {
+      "description": "Screenshot",
       "condition": {
         "mask": {
           "id": 5,
           "activator": {
-            "type": "long",
-            "mode": "hold_until_release"
+            "type": "double",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
           }
         }
       },
       "macros": [
         {
           "keyboard": {
-            "buttonId": 50,
-            "description": "DIK_M"
+            "buttonId": 219,
+            "description": "DIK_LWIN",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 219,
+            "description": "DIK_LWIN",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "up"
           }
         }
       ]
     },
     {
+      "description": "Hold to Crouch",
       "condition": {
         "mask": {
           "id": 6,
           "activator": {
-            "type": "double",
-            "mode": "hold_until_release"
+            "type": "long",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
           }
         }
       },
@@ -566,21 +558,43 @@
           "gamepad": {
             "id": 1,
             "buttonId": 2,
-            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
+            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A",
+            "action": "down"
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 2,
+            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A",
+            "action": "up"
+          }
+        },
+        {
+          "rumble": {
+            "duration": 50,
+            "amplitude": {
+              "motor": {
+                "left": 80,
+                "right": 80
+              },
+              "trigger": {
+                "left": 60,
+                "right": 60
+              }
+            }
           }
         }
       ]
     },
     {
+      "description": "Toggle HUD",
       "condition": {
         "mask": {
           "id": 7,
           "activator": {
             "type": "single",
-            "mode": "onetime",
-            "params": {
-              "expert": true
-            }
+            "mode": "hold_until_release"
           }
         }
       },
@@ -588,44 +602,19 @@
         {
           "keyboard": {
             "buttonId": 21,
-            "description": "DIK_Y",
-            "action": "down"
-          }
-        },
-        {
-          "keyboard": {
-            "buttonId": 21,
-            "description": "DIK_Y",
-            "action": "up"
-          }
-        },
-        {
-          "rumble": {
-            "duration": 50,
-            "amplitude": {
-              "motor": {
-                "left": 80,
-                "right": 80
-              },
-              "trigger": {
-                "left": 60,
-                "right": 60
-              }
-            }
+            "description": "DIK_Y"
           }
         }
       ]
     },
     {
+      "description": "Toggle Minimap",
       "condition": {
         "mask": {
           "id": 7,
           "activator": {
             "type": "long",
-            "mode": "onetime",
-            "params": {
-              "expert": true
-            }
+            "mode": "hold_until_release"
           }
         }
       },
@@ -633,50 +622,7 @@
         {
           "keyboard": {
             "buttonId": 38,
-            "description": "DIK_L",
-            "action": "down"
-          }
-        },
-        {
-          "keyboard": {
-            "buttonId": 38,
-            "description": "DIK_L",
-            "action": "up"
-          }
-        },
-        {
-          "rumble": {
-            "duration": 50,
-            "amplitude": {
-              "motor": {
-                "left": 80,
-                "right": 80
-              },
-              "trigger": {
-                "left": 60,
-                "right": 60
-              }
-            }
-          }
-        },
-        {
-          "pause": {
-            "value": 100
-          }
-        },
-        {
-          "rumble": {
-            "duration": 50,
-            "amplitude": {
-              "motor": {
-                "left": 80,
-                "right": 80
-              },
-              "trigger": {
-                "left": 60,
-                "right": 60
-              }
-            }
+            "description": "DIK_L"
           }
         }
       ]
@@ -722,6 +668,7 @@
       ]
     },
     {
+      "description": "Character",
       "condition": {
         "mask": {
           "id": 10,
@@ -734,63 +681,19 @@
       "macros": [
         {
           "keyboard": {
-            "buttonId": 37,
-            "description": "DIK_K"
+            "buttonId": 25,
+            "description": "DIK_P"
           }
         }
       ]
     },
     {
+      "description": "Toggle ReShade",
       "condition": {
         "mask": {
           "id": 10,
           "activator": {
             "type": "long",
-            "mode": "onetime",
-            "params": {
-              "expert": true
-            }
-          }
-        }
-      },
-      "macros": [
-        {
-          "keyboard": {
-            "buttonId": 63,
-            "description": "DIK_F5",
-            "action": "down"
-          }
-        },
-        {
-          "keyboard": {
-            "buttonId": 63,
-            "description": "DIK_F5",
-            "action": "up"
-          }
-        },
-        {
-          "rumble": {
-            "duration": 50,
-            "amplitude": {
-              "motor": {
-                "left": 80,
-                "right": 80
-              },
-              "trigger": {
-                "left": 60,
-                "right": 60
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 10,
-          "activator": {
-            "type": "double",
             "mode": "hold_until_release"
           }
         }
@@ -805,11 +708,12 @@
       ]
     },
     {
+      "description": "Open ReShade",
       "condition": {
         "mask": {
           "id": 10,
           "activator": {
-            "type": "triple",
+            "type": "double",
             "mode": "hold_until_release"
           }
         }
@@ -824,6 +728,7 @@
       ]
     },
     {
+      "description": "Journal",
       "condition": {
         "mask": {
           "id": 11,
@@ -843,6 +748,42 @@
       ]
     },
     {
+      "description": "Map",
+      "condition": {
+        "mask": {
+          "id": 11,
+          "activator": {
+            "type": "long",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "Map",
+      "condition": {
+        "mask": {
+          "id": 11,
+          "activator": {
+            "type": "double",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 50,
+            "description": "DIK_M"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Crafting",
       "condition": {
         "mask": {
           "id": 12,
@@ -855,13 +796,14 @@
       "macros": [
         {
           "keyboard": {
-            "buttonId": 25,
-            "description": "DIK_P"
+            "buttonId": 37,
+            "description": "DIK_K"
           }
         }
       ]
     },
     {
+      "description": "Inventory",
       "condition": {
         "mask": {
           "id": 13,
@@ -882,25 +824,6 @@
     },
     {
       "condition": {
-        "mask": {
-          "id": 13,
-          "activator": {
-            "type": "triple",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "keyboard": {
-            "buttonId": 207,
-            "description": "DIK_END"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
         "hardware": {
           "deviceId": 1,
           "buttonId": 7,
@@ -915,20 +838,8 @@
       "condition": {
         "hardware": {
           "deviceId": 1,
-          "buttonId": 8,
-          "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start"
-        }
-      },
-      "hardware": {
-        "unmap": true
-      }
-    },
-    {
-      "condition": {
-        "hardware": {
-          "deviceId": 1,
-          "buttonId": 11,
-          "description": "XB, Nintendo: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+          "buttonId": 13,
+          "description": "XB: Share / DualSense: Mic / Stadia: Assistant / NvidiaShield: Home"
         }
       },
       "hardware": {

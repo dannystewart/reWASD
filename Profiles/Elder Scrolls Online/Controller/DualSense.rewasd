@@ -3,6 +3,9 @@
   "appVersion": "6.0.1",
   "config": {
     "appName": "Elder Scrolls Online",
+    "processNames": [
+      "eso64.exe"
+    ],
     "minTimeUnit": 1
   },
   "devices": {
@@ -17,7 +20,7 @@
       "gamepads": [
         {
           "id": 1,
-          "type": "ds4"
+          "type": "xboxonebt"
         }
       ]
     }

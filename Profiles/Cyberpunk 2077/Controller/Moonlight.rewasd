@@ -121,13 +121,23 @@
       "set": [
         {
           "deviceId": 1,
+          "buttonId": 3,
+          "description": "XB, Stadia: X / DS4: Square / Nintendo: Y"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
           "buttonId": 4,
           "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
         }
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "set": [
         {
           "deviceId": 1,
@@ -137,7 +147,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "set": [
         {
           "deviceId": 1,
@@ -147,7 +157,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "set": [
         {
           "deviceId": 1,
@@ -157,7 +167,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "set": [
         {
           "deviceId": 1,
@@ -167,7 +177,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "set": [
         {
           "deviceId": 1,
@@ -177,7 +187,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "set": [
         {
           "deviceId": 1,
@@ -187,7 +197,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "set": [
         {
           "deviceId": 1,
@@ -197,7 +207,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 10,
       "set": [
         {
           "deviceId": 1,
@@ -207,7 +217,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 11,
       "set": [
         {
           "deviceId": 1,
@@ -224,9 +234,71 @@
   ],
   "mappings": [
     {
+      "description": "Rapid Pickup",
       "condition": {
         "mask": {
           "id": 1,
+          "activator": {
+            "type": "long",
+            "mode": "turbo",
+            "params": {
+              "pause": 50
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 3,
+            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "double",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 3,
+            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y",
+            "action": "down"
+          }
+        },
+        {
+          "pause": {
+            "value": 1000
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 3,
+            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Holster/Unholster",
+      "condition": {
+        "mask": {
+          "id": 2,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -243,9 +315,10 @@
       ]
     },
     {
+      "description": "Y",
       "condition": {
         "mask": {
-          "id": 1,
+          "id": 2,
           "activator": {
             "type": "long",
             "mode": "hold_until_release"
@@ -263,9 +336,30 @@
       ]
     },
     {
+      "description": "Y",
       "condition": {
         "mask": {
           "id": 2,
+          "activator": {
+            "type": "double",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 4,
+            "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 3,
           "activator": {
             "type": "double",
             "mode": "toggle"
@@ -285,7 +379,7 @@
     {
       "condition": {
         "mask": {
-          "id": 3,
+          "id": 4,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -304,7 +398,7 @@
     {
       "condition": {
         "mask": {
-          "id": 3,
+          "id": 4,
           "activator": {
             "type": "long",
             "mode": "onetime",
@@ -349,7 +443,7 @@
     {
       "condition": {
         "mask": {
-          "id": 4,
+          "id": 5,
           "activator": {
             "type": "single",
             "mode": "onetime",
@@ -386,7 +480,7 @@
     {
       "condition": {
         "mask": {
-          "id": 4,
+          "id": 5,
           "activator": {
             "type": "long",
             "mode": "onetime",
@@ -421,7 +515,7 @@
     {
       "condition": {
         "mask": {
-          "id": 4,
+          "id": 5,
           "activator": {
             "type": "double",
             "mode": "onetime",
@@ -456,7 +550,7 @@
     {
       "condition": {
         "mask": {
-          "id": 4,
+          "id": 5,
           "activator": {
             "type": "triple",
             "mode": "hold_until_release"
@@ -475,7 +569,7 @@
     {
       "condition": {
         "mask": {
-          "id": 5,
+          "id": 6,
           "activator": {
             "type": "double",
             "mode": "hold_until_release"
@@ -495,7 +589,7 @@
     {
       "condition": {
         "mask": {
-          "id": 6,
+          "id": 7,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -514,7 +608,7 @@
     {
       "condition": {
         "mask": {
-          "id": 6,
+          "id": 7,
           "activator": {
             "type": "long",
             "mode": "hold_until_release"
@@ -533,7 +627,7 @@
     {
       "condition": {
         "mask": {
-          "id": 7,
+          "id": 8,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -553,7 +647,7 @@
     {
       "condition": {
         "mask": {
-          "id": 8,
+          "id": 9,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -573,7 +667,7 @@
     {
       "condition": {
         "mask": {
-          "id": 9,
+          "id": 10,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -594,7 +688,7 @@
       "condition": {
         "shiftId": 1,
         "mask": {
-          "id": 2,
+          "id": 3,
           "activator": {
             "type": "single",
             "mode": "toggle"
@@ -614,7 +708,7 @@
     {
       "condition": {
         "mask": {
-          "id": 10,
+          "id": 11,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"

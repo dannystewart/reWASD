@@ -1,0 +1,52 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true,
+			"**/.pytest_cache": true,
+			"**/.vscode": true,
+			"**/__pycache__": true,
+			"**/node_modules": true,
+			"*.sublime-*": true,
+			"env*": true,
+			"venv": true,
+			"Logs": true
+		},
+		"explorerExclude.backup": null,
+		"vscodeGitCommit.template": [
+			"{feat}: {message}"
+		],
+		"vscodeGitCommit.variables": {
+			"feat": [
+			  {
+				"label": "new",
+				"detail": "Added a new config"
+			  },
+			  {
+				"label": "update",
+				"detail": "Updated an existing config"
+			  },
+			  {
+				"label": "remove",
+				"detail": "Removed a config"
+			  },
+			  {
+				"label": "docs",
+				"detail": "Updates to documentation, readme, notes, etc."
+			  },
+			  {
+				"label": "meta",
+				"detail": "Meta stuff pertaining to the repository itself"
+			  }
+			]
+	}
+}

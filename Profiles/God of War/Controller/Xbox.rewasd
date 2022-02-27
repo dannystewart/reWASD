@@ -48,57 +48,6 @@
       {
         "id": 1,
         "name": "gamepad",
-        "default": {
-          "sticks": [
-            {
-              "name": "left",
-              "zones": [
-                {
-                  "name": "low",
-                  "x": 7000
-                }
-              ],
-              "curves": {
-                "points": {
-                  "horizontal": [
-                    {
-                      "id": 1,
-                      "value": 0,
-                      "travel": 7000
-                    },
-                    {
-                      "id": 2,
-                      "value": 8195,
-                      "travel": 8190
-                    },
-                    {
-                      "id": 3,
-                      "value": 24575,
-                      "travel": 24575
-                    }
-                  ],
-                  "vertical": [
-                    {
-                      "id": 1,
-                      "value": 0,
-                      "travel": 7000
-                    },
-                    {
-                      "id": 2,
-                      "value": 8195,
-                      "travel": 8190
-                    },
-                    {
-                      "id": 3,
-                      "value": 24575,
-                      "travel": 24575
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        },
         "convertToVirtual": true
       }
     ],

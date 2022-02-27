@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 3.0,
+  "appVersion": "6.0.1",
+  "config": {
+    "appName": "Horizon Zero Dawn",
+    "processNames": [
+      "HorizonZeroDawn.exe"
+    ],
+    "led": {
+      "default": {
+        "mode": "solid",
+        "colors": [
+          [
+            200,
+            100,
+            0
+          ]
+        ],
+        "loop": true
+      },
+      "shifts": [
+        {
+          "shiftId": 1,
+          "mode": "solid",
+          "colors": [
+            [
+              255,
+              255,
+              0
+            ]
+          ],
+          "loop": true
+        },
+        {
+          "shiftId": 2,
+          "mode": "solid",
+          "colors": [
+            [
+              0,
+              255,
+              0
+            ]
+          ],
+          "loop": true
+        },
+        {
+          "shiftId": 3,
+          "mode": "solid",
+          "loop": true
+        },
+        {
+          "shiftId": 4,
+          "mode": "solid",
+          "loop": true
+        }
+      ]
+    },
+    "minTimeUnit": 1
+  },
+  "devices": {
+    "hardware": [
+      {
+        "id": 1,
+        "name": "gamepad",
+        "default": {
+          "sticks": [
+            {
+              "name": "left",
+              "zones": [
+                {
+                  "name": "low",
+                  "x": 7000
+                },
+                {
+                  "name": "med",
+                  "x": 16000
+                },
+                {
+                  "name": "high",
+                  "x": 24000
+                }
+              ],
+              "curves": {
+                "points": {
+                  "horizontal": [
+                    {
+                      "id": 1,
+                      "value": 0,
+                      "travel": 7000
+                    },
+                    {
+                      "id": 2,
+                      "value": 8195,
+                      "travel": 8190
+                    },
+                    {
+                      "id": 3,
+                      "value": 24575,
+                      "travel": 24575
+                    }
+                  ],
+                  "vertical": [
+                    {
+                      "id": 1,
+                      "value": 0,
+                      "travel": 7000
+                    },
+                    {
+                      "id": 2,
+                      "value": 8195,
+                      "travel": 8190
+                    },
+                    {
+                      "id": 3,
+                      "value": 24575,
+                      "travel": 24575
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "convertToVirtual": true
+      }
+    ],
+    "virtual": {
+      "gamepads": [
+        {
+          "id": 1,
+          "type": "xboxonebt",
+          "default": {
+            "sticks": [
+              {
+                "name": "left",
+                "initialSpeed": 7
+              },
+              {
+                "name": "right",
+                "maxDeflection": 32767,
+                "initialSpeed": 5
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "shifts": [
+    {
+      "id": 1,
+      "type": "default",
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 5,
+          "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
+        }
+      ]
+    }
+  ],
+  "masks": [
+    {
+      "id": 1,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 31,
+          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 32,
+          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 55,
+          "description": "BtnRightTrigger"
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "description": "Crouch",
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 10,
+            "description": "XB, Nintendo: RightStick / DS4, Stadia: R3"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Dodge",
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 2,
+            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Sprint",
+      "condition": {
+        "mask": {
+          "id": 3,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 9,
+            "description": "XB, Nintendo: LeftStick / DS4, Stadia: L3"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Jump",
+      "condition": {
+        "mask": {
+          "id": 4,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Craft Ammo",
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 4,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Craft Ammo",
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 5,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+          }
+        }
+      ]
+    }
+  ]
+}

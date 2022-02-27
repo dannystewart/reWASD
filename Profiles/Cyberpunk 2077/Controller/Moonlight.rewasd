@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3.0,
-  "appVersion": "6.0.1",
+  "appVersion": "6.1.0",
   "config": {
     "appName": "Cyberpunk 2077",
     "processNames": [
@@ -62,41 +62,6 @@
       {
         "id": 1,
         "name": "gamepad",
-        "default": {
-          "sticks": [
-            {
-              "name": "right",
-              "curves": {
-                "points": {
-                  "horizontal": [
-                    {
-                      "id": 1,
-                      "value": 17815,
-                      "travel": 17814
-                    },
-                    {
-                      "id": 2,
-                      "value": 20000,
-                      "travel": 27852
-                    }
-                  ],
-                  "vertical": [
-                    {
-                      "id": 1,
-                      "value": 17815,
-                      "travel": 17814
-                    },
-                    {
-                      "id": 2,
-                      "value": 20000,
-                      "travel": 27852
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        },
         "convertToVirtual": true
       }
     ],
@@ -109,12 +74,6 @@
       ]
     }
   },
-  "shifts": [
-    {
-      "id": 1,
-      "type": "default"
-    }
-  ],
   "masks": [
     {
       "id": 1,
@@ -159,71 +118,6 @@
     {
       "id": 5,
       "set": [
-        {
-          "deviceId": 1,
-          "buttonId": 8,
-          "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "set": [
-        {
-          "deviceId": 1,
-          "buttonId": 10,
-          "description": "XB, Nintendo: RightStick / DS4, Stadia: R3"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "set": [
-        {
-          "deviceId": 1,
-          "buttonId": 11,
-          "description": "XB, Nintendo: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "set": [
-        {
-          "deviceId": 1,
-          "buttonId": 29,
-          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "set": [
-        {
-          "deviceId": 1,
-          "buttonId": 31,
-          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "set": [
-        {
-          "deviceId": 1,
-          "buttonId": 32,
-          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "set": [
-        {
-          "deviceId": 1,
-          "buttonId": 7,
-          "description": "XB: View / XB360: Back / DS4: Share / Nintendo: Minus / DS3: Select / Stadia: Options / NvidiaShield: Back / SNES: Select"
-        },
         {
           "deviceId": 1,
           "buttonId": 8,
@@ -327,10 +221,9 @@
       },
       "macros": [
         {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 4,
-            "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU"
           }
         }
       ]
@@ -357,6 +250,7 @@
       ]
     },
     {
+      "description": "Toggle Scanner",
       "condition": {
         "mask": {
           "id": 3,
@@ -377,6 +271,7 @@
       ]
     },
     {
+      "description": "Esc",
       "condition": {
         "mask": {
           "id": 4,
@@ -396,6 +291,7 @@
       ]
     },
     {
+      "description": "Quicksave",
       "condition": {
         "mask": {
           "id": 4,
@@ -425,7 +321,7 @@
         },
         {
           "rumble": {
-            "duration": 100,
+            "duration": 50,
             "amplitude": {
               "motor": {
                 "left": 80,
@@ -445,43 +341,6 @@
         "mask": {
           "id": 5,
           "activator": {
-            "type": "single",
-            "mode": "onetime",
-            "params": {
-              "expert": true
-            }
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 8,
-            "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start",
-            "action": "down"
-          }
-        },
-        {
-          "pause": {
-            "value": 50
-          }
-        },
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 8,
-            "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start",
-            "action": "up"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 5,
-          "activator": {
             "type": "long",
             "mode": "onetime",
             "params": {
@@ -493,7 +352,7 @@
       "macros": [
         {
           "pause": {
-            "value": 200
+            "value": 100
           }
         },
         {
@@ -513,6 +372,7 @@
       ]
     },
     {
+      "description": "Screenshot",
       "condition": {
         "mask": {
           "id": 5,
@@ -528,20 +388,43 @@
       "macros": [
         {
           "keyboard": {
-            "buttonId": 24,
-            "description": "DIK_O",
+            "buttonId": 219,
+            "description": "DIK_LWIN",
             "action": "down"
           }
         },
         {
-          "pause": {
-            "value": 200
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "down"
           }
         },
         {
           "keyboard": {
-            "buttonId": 24,
-            "description": "DIK_O",
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 219,
+            "description": "DIK_LWIN",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
             "action": "up"
           }
         }
@@ -549,180 +432,15 @@
     },
     {
       "condition": {
-        "mask": {
-          "id": 5,
-          "activator": {
-            "type": "triple",
-            "mode": "hold_until_release"
-          }
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 7,
+          "description": "XB: View / XB360: Back / DS4: Share / Nintendo: Minus / DS3: Select / Stadia: Options / NvidiaShield: Back / SNES: Select"
         }
       },
-      "macros": [
-        {
-          "keyboard": {
-            "buttonId": 36,
-            "description": "DIK_J"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 6,
-          "activator": {
-            "type": "double",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 2,
-            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 7,
-          "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "keyboard": {
-            "buttonId": 21,
-            "description": "DIK_Y"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 7,
-          "activator": {
-            "type": "long",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "keyboard": {
-            "buttonId": 38,
-            "description": "DIK_L"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 8,
-          "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 5,
-            "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 9,
-          "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 9,
-            "description": "XB, Nintendo: LeftStick / DS4, Stadia: L3"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 10,
-          "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 1,
-            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "shiftId": 1,
-        "mask": {
-          "id": 3,
-          "activator": {
-            "type": "single",
-            "mode": "toggle"
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 5,
-            "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 11,
-          "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "keyboard": {
-            "buttonId": 21,
-            "description": "DIK_Y"
-          }
-        }
-      ]
+      "hardware": {
+        "unmap": true
+      }
     }
   ]
 }

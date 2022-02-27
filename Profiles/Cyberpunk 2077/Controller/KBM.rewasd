@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 3.0,
+  "appVersion": "6.1.0",
+  "config": {
+    "appName": "Cyberpunk 2077",
+    "processNames": [
+      "Cyberpunk2077.exe"
+    ],
+    "minTimeUnit": 1
+  },
+  "devices": {
+    "groups": [
+      {
+        "id": 1,
+        "name": "keyboard"
+      }
+    ],
+    "hardware": [
+      {
+        "groupId": 1,
+        "id": 11,
+        "name": "keyboard",
+        "type": "standard"
+      }
+    ],
+    "virtual": {
+      "gamepads": [
+        {
+          "id": 1,
+          "type": "xboxonebt"
+        }
+      ]
+    }
+  },
+  "masks": [
+    {
+      "id": 1,
+      "set": [
+        {
+          "deviceId": 11,
+          "buttonId": 18,
+          "description": "DIK_E"
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "long",
+            "mode": "turbo",
+            "params": {
+              "pause": 50
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 18,
+            "description": "DIK_E"
+          }
+        }
+      ]
+    }
+  ]
+}

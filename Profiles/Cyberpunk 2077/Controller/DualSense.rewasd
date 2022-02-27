@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3.0,
-  "appVersion": "6.0.1",
+  "appVersion": "6.1.0",
   "config": {
     "appName": "Cyberpunk 2077",
     "processNames": [
@@ -150,7 +150,7 @@
         {
           "deviceId": 1,
           "buttonId": 13,
-          "description": "XB: Share / DualSense: Mic / Stadia: Assistant / NvidiaShield: Home"
+          "description": "XB: Share / DualSense: Mic / Stadia: Assistant / NvidiaShield: Home / Flydigi: Back"
         }
       ]
     },
@@ -839,7 +839,7 @@
         "hardware": {
           "deviceId": 1,
           "buttonId": 13,
-          "description": "XB: Share / DualSense: Mic / Stadia: Assistant / NvidiaShield: Home"
+          "description": "XB: Share / DualSense: Mic / Stadia: Assistant / NvidiaShield: Home / Flydigi: Back"
         }
       },
       "hardware": {

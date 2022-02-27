@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 3.0,
+  "appVersion": "6.1.0",
+  "config": {
+    "appName": "Halo",
+    "processNames": [
+      "MCC-Win64-Shipping.exe"
+    ],
+    "minTimeUnit": 1
+  },
+  "devices": {
+    "hardware": [
+      {
+        "id": 1,
+        "name": "gamepad",
+        "convertToVirtual": true
+      }
+    ],
+    "virtual": {
+      "gamepads": [
+        {
+          "id": 1,
+          "type": "xboxonebt"
+        }
+      ]
+    }
+  }
+}

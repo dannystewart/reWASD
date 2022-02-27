@@ -3,6 +3,10 @@
   "appVersion": "6.1.0",
   "config": {
     "appName": "Xbox",
+    "processNames": [
+      "XboxAppServices.exe",
+      "XboxPcApp.exe"
+    ],
     "minTimeUnit": 1
   },
   "devices": {

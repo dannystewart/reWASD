@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3.0,
+  "appVersion": "6.1.0",
+  "config": {
+    "appName": "Xbox",
+    "minTimeUnit": 1
+  },
+  "devices": {
+    "hardware": [],
+    "virtual": {
+      "gamepads": [
+        {
+          "id": 1,
+          "type": "xboxonebt"
+        }
+      ]
+    }
+  }
+}

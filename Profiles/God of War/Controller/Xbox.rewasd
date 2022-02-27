@@ -52,30 +52,46 @@
           "sticks": [
             {
               "name": "right",
+              "zones": [
+                {
+                  "name": "low",
+                  "x": 7000
+                }
+              ],
               "curves": {
                 "points": {
                   "horizontal": [
                     {
                       "id": 1,
-                      "value": 17815,
-                      "travel": 17814
+                      "value": 0,
+                      "travel": 7000
                     },
                     {
                       "id": 2,
-                      "value": 20000,
-                      "travel": 27852
+                      "value": 8195,
+                      "travel": 8907
+                    },
+                    {
+                      "id": 3,
+                      "value": 24575,
+                      "travel": 24575
                     }
                   ],
                   "vertical": [
                     {
                       "id": 1,
-                      "value": 17815,
-                      "travel": 17814
+                      "value": 0,
+                      "travel": 7000
                     },
                     {
                       "id": 2,
-                      "value": 20000,
-                      "travel": 27852
+                      "value": 8195,
+                      "travel": 8907
+                    },
+                    {
+                      "id": 3,
+                      "value": 24575,
+                      "travel": 24575
                     }
                   ]
                 }

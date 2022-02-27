@@ -215,6 +215,19 @@
           }
         }
       ]
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 31,
+          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus / Flydigi: M2"
+        }
+      },
+      "hardware": {
+        "buttonId": 9,
+        "description": "XB, Nintendo: LeftStick / DS4, Stadia: L3"
+      }
     }
   ]
 }

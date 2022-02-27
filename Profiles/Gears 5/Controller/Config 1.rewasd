@@ -3,6 +3,9 @@
   "appVersion": "6.1.0",
   "config": {
     "appName": "Gears 5",
+    "processNames": [
+      "Gears5.exe"
+    ],
     "minTimeUnit": 1
   },
   "devices": {

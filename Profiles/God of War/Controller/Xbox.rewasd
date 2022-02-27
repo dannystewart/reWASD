@@ -51,6 +51,53 @@
         "default": {
           "sticks": [
             {
+              "name": "left",
+              "zones": [
+                {
+                  "name": "low",
+                  "x": 7000
+                }
+              ],
+              "curves": {
+                "points": {
+                  "horizontal": [
+                    {
+                      "id": 1,
+                      "value": 0,
+                      "travel": 7000
+                    },
+                    {
+                      "id": 2,
+                      "value": 8195,
+                      "travel": 8190
+                    },
+                    {
+                      "id": 3,
+                      "value": 24575,
+                      "travel": 24575
+                    }
+                  ],
+                  "vertical": [
+                    {
+                      "id": 1,
+                      "value": 0,
+                      "travel": 7000
+                    },
+                    {
+                      "id": 2,
+                      "value": 8195,
+                      "travel": 8190
+                    },
+                    {
+                      "id": 3,
+                      "value": 24575,
+                      "travel": 24575
+                    }
+                  ]
+                }
+              }
+            },
+            {
               "name": "right",
               "zones": [
                 {
@@ -73,13 +120,13 @@
                     },
                     {
                       "id": 3,
-                      "value": 17301,
-                      "travel": 23229
+                      "value": 17563,
+                      "travel": 22780
                     },
                     {
                       "id": 4,
                       "value": 24379,
-                      "travel": 29401
+                      "travel": 29064
                     }
                   ],
                   "vertical": [
@@ -95,13 +142,13 @@
                     },
                     {
                       "id": 3,
-                      "value": 17301,
-                      "travel": 23229
+                      "value": 17563,
+                      "travel": 22780
                     },
                     {
                       "id": 4,
                       "value": 24379,
-                      "travel": 29401
+                      "travel": 29064
                     }
                   ]
                 }

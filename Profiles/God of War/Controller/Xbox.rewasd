@@ -96,63 +96,6 @@
                   ]
                 }
               }
-            },
-            {
-              "name": "right",
-              "zones": [
-                {
-                  "name": "low",
-                  "x": 7000
-                }
-              ],
-              "curves": {
-                "points": {
-                  "horizontal": [
-                    {
-                      "id": 1,
-                      "value": 0,
-                      "travel": 7000
-                    },
-                    {
-                      "id": 2,
-                      "value": 8195,
-                      "travel": 8907
-                    },
-                    {
-                      "id": 3,
-                      "value": 17563,
-                      "travel": 22780
-                    },
-                    {
-                      "id": 4,
-                      "value": 24379,
-                      "travel": 29064
-                    }
-                  ],
-                  "vertical": [
-                    {
-                      "id": 1,
-                      "value": 0,
-                      "travel": 7000
-                    },
-                    {
-                      "id": 2,
-                      "value": 8195,
-                      "travel": 8907
-                    },
-                    {
-                      "id": 3,
-                      "value": 17563,
-                      "travel": 22780
-                    },
-                    {
-                      "id": 4,
-                      "value": 24379,
-                      "travel": 29064
-                    }
-                  ]
-                }
-              }
             }
           ]
         },

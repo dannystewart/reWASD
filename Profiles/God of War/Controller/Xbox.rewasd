@@ -66,13 +66,23 @@
       "set": [
         {
           "deviceId": 1,
+          "buttonId": 1,
+          "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
           "buttonId": 2,
           "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
         }
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "set": [
         {
           "deviceId": 1,
@@ -82,22 +92,12 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "set": [
         {
           "deviceId": 1,
           "buttonId": 30,
           "description": "XB: RightUpperPaddle / JoyCon: Right SR / Flydigi: M3"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "set": [
-        {
-          "deviceId": 1,
-          "buttonId": 31,
-          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus / Flydigi: M2"
         }
       ]
     },
@@ -130,6 +130,29 @@
         {
           "gamepad": {
             "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "long",
+            "mode": "turbo",
+            "params": {
+              "pause": 200
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
             "buttonId": 2,
             "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
           }
@@ -139,7 +162,7 @@
     {
       "condition": {
         "mask": {
-          "id": 2,
+          "id": 3,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -159,7 +182,7 @@
     {
       "condition": {
         "mask": {
-          "id": 3,
+          "id": 4,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -172,26 +195,6 @@
             "id": 1,
             "buttonId": 10,
             "description": "XB, Nintendo: RightStick / DS4, Stadia: R3"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 4,
-          "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 9,
-            "description": "XB, Nintendo: LeftStick / DS4, Stadia: L3"
           }
         }
       ]
@@ -215,18 +218,6 @@
           }
         }
       ]
-    },
-    {
-      "condition": {
-        "hardware": {
-          "deviceId": 1,
-          "buttonId": 31,
-          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus / Flydigi: M2"
-        }
-      },
-      "hardware": {
-        "unmap": true
-      }
     }
   ]
 }

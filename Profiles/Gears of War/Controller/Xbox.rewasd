@@ -161,7 +161,10 @@
           "id": 4,
           "activator": {
             "type": "single",
-            "mode": "hold_until_release"
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
           }
         }
       },
@@ -170,7 +173,21 @@
           "gamepad": {
             "id": 1,
             "buttonId": 1,
-            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B",
+            "action": "down"
+          }
+        },
+        {
+          "pause": {
+            "value": 1500
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B",
+            "action": "up"
           }
         }
       ]

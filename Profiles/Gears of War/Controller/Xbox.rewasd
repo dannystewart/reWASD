@@ -2,7 +2,7 @@
   "schemaVersion": 3.0,
   "appVersion": "6.1.0",
   "config": {
-    "appName": "Gears 5",
+    "appName": "Gears of War",
     "processNames": [
       "GearGame.exe"
     ],
@@ -24,5 +24,69 @@
         }
       ]
     }
-  }
+  },
+  "masks": [
+    {
+      "id": 1,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR / Flydigi: M3"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 31,
+          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus / Flydigi: M2"
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 6,
+            "description": "XB: RightShoulder / DS4, Stadia: R1 / Nintendo: R"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+          }
+        }
+      ]
+    }
+  ]
 }

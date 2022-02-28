@@ -206,8 +206,8 @@
         {
           "gamepad": {
             "id": 1,
-            "buttonId": 3,
-            "description": "XB, Stadia: X / DS4: Square / Nintendo: Y"
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
           }
         }
       ]

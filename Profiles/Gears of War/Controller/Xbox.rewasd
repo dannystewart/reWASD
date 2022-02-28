@@ -111,8 +111,24 @@
           }
         },
         {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 6,
+            "description": "XB: RightShoulder / DS4, Stadia: R1 / Nintendo: R",
+            "action": "up"
+          }
+        },
+        {
           "pause": {
             "value": 500
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 6,
+            "description": "XB: RightShoulder / DS4, Stadia: R1 / Nintendo: R",
+            "action": "down"
           }
         },
         {

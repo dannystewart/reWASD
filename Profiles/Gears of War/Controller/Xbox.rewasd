@@ -31,13 +31,23 @@
       "set": [
         {
           "deviceId": 1,
+          "buttonId": 9,
+          "description": "XB, Nintendo: LeftStick / DS4, Stadia: L3"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
           "buttonId": 29,
           "description": "XB: LeftUpperPaddle / JoyCon: Left SL / Flydigi: M4"
         }
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "set": [
         {
           "deviceId": 1,
@@ -47,7 +57,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "set": [
         {
           "deviceId": 1,
@@ -57,7 +67,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "set": [
         {
           "deviceId": 1,
@@ -72,6 +82,43 @@
       "condition": {
         "mask": {
           "id": 1,
+          "activator": {
+            "type": "single",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B",
+            "action": "down"
+          }
+        },
+        {
+          "pause": {
+            "value": 2000
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -91,7 +138,7 @@
     {
       "condition": {
         "mask": {
-          "id": 2,
+          "id": 3,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -111,7 +158,7 @@
     {
       "condition": {
         "mask": {
-          "id": 3,
+          "id": 4,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -131,7 +178,7 @@
     {
       "condition": {
         "mask": {
-          "id": 4,
+          "id": 5,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"

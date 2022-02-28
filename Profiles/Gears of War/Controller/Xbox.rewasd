@@ -31,13 +31,23 @@
       "set": [
         {
           "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL / Flydigi: M4"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
           "buttonId": 30,
           "description": "XB: RightUpperPaddle / JoyCon: Right SR / Flydigi: M3"
         }
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "set": [
         {
           "deviceId": 1,
@@ -47,7 +57,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "set": [
         {
           "deviceId": 1,
@@ -72,6 +82,26 @@
         {
           "gamepad": {
             "id": 1,
+            "buttonId": 51,
+            "description": "BtnLeftTrigger"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
             "buttonId": 6,
             "description": "XB: RightShoulder / DS4, Stadia: R1 / Nintendo: R"
           }
@@ -81,7 +111,7 @@
     {
       "condition": {
         "mask": {
-          "id": 2,
+          "id": 3,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -101,7 +131,7 @@
     {
       "condition": {
         "mask": {
-          "id": 3,
+          "id": 4,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"

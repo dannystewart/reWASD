@@ -3,9 +3,6 @@
   "appVersion": "6.1.0",
   "config": {
     "appName": "God of War",
-    "processNames": [
-      "GoW.exe"
-    ],
     "minTimeUnit": 1
   },
   "devices": {
@@ -20,7 +17,7 @@
       "gamepads": [
         {
           "id": 1,
-          "type": "ds4"
+          "type": "xboxonebt"
         }
       ]
     }
@@ -31,8 +28,18 @@
       "set": [
         {
           "deviceId": 1,
-          "buttonId": 50,
-          "description": "RightStickRight"
+          "buttonId": 1,
+          "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 2,
+          "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
         }
       ]
     }
@@ -43,16 +50,43 @@
         "mask": {
           "id": 1,
           "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
+            "type": "long",
+            "mode": "turbo",
+            "params": {
+              "pause": 200
+            }
           }
         }
       },
       "macros": [
         {
-          "keyboard": {
-            "buttonId": 56,
-            "description": "DIK_LMENU"
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "long",
+            "mode": "turbo",
+            "params": {
+              "pause": 200
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 2,
+            "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
           }
         }
       ]

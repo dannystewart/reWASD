@@ -3,9 +3,6 @@
   "appVersion": "6.1.0",
   "config": {
     "appName": "Guild Wars 2",
-    "processNames": [
-      "Gw2-64.exe"
-    ],
     "minTimeUnit": 1
   },
   "devices": {

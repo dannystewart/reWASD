@@ -2,7 +2,7 @@
   "schemaVersion": 3.0,
   "appVersion": "6.1.0",
   "config": {
-    "appName": "Gears of War",
+    "appName": "Gears",
     "processNames": [
       "GearGame.exe"
     ],

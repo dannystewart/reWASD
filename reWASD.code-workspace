@@ -21,7 +21,6 @@
 			"venv": true,
 			"Logs": true
 		},
-		"explorerExclude.backup": null,
 		"vscodeGitCommit.template": [
 			"{feat}: {message}"
 		],
@@ -48,5 +47,6 @@
 				"detail": "Meta stuff pertaining to the repository itself"
 			  }
 			]
+		}
 	}
 }

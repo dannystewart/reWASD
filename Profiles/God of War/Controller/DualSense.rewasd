@@ -3,17 +3,14 @@
   "appVersion": "6.1.0",
   "config": {
     "appName": "God of War",
-    "processNames": [
-      "GoW.exe"
-    ],
     "led": {
       "default": {
         "mode": "solid",
         "colors": [
           [
-            255,
-            0,
-            0
+            240,
+            100,
+            20
           ]
         ],
         "loop": true
@@ -55,7 +52,7 @@
       "gamepads": [
         {
           "id": 1,
-          "type": "xboxonebt"
+          "type": "ds4"
         }
       ]
     }
@@ -108,16 +105,6 @@
           "deviceId": 1,
           "buttonId": 32,
           "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus / Flydigi: M1"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "set": [
-        {
-          "deviceId": 1,
-          "buttonId": 43,
-          "description": "LeftStickRight"
         }
       ]
     }
@@ -222,25 +209,6 @@
             "id": 1,
             "buttonId": 4,
             "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
-          }
-        }
-      ]
-    },
-    {
-      "condition": {
-        "mask": {
-          "id": 6,
-          "activator": {
-            "type": "single",
-            "mode": "hold_until_release"
-          }
-        }
-      },
-      "macros": [
-        {
-          "keyboard": {
-            "buttonId": 56,
-            "description": "DIK_LMENU"
           }
         }
       ]

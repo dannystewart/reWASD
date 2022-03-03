@@ -1,11 +1,8 @@
 {
   "schemaVersion": 3.0,
-  "appVersion": "6.0.1",
+  "appVersion": "6.1.0",
   "config": {
-    "appName": "Explorer",
-    "processNames": [
-      "explorer.exe"
-    ],
+    "appName": "Windows Explorer",
     "minTimeUnit": 1
   },
   "devices": {
@@ -170,7 +167,7 @@
         {
           "deviceId": 1,
           "buttonId": 11,
-          "description": "XB, Nintendo: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+          "description": "XB, Nintendo, Flydigi: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
         }
       ]
     },
@@ -180,7 +177,7 @@
         {
           "deviceId": 1,
           "buttonId": 29,
-          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL / Flydigi: M4"
         }
       ]
     },
@@ -190,7 +187,7 @@
         {
           "deviceId": 1,
           "buttonId": 30,
-          "description": "XB: RightUpperPaddle / JoyCon: Right SR"
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR / Flydigi: M3"
         }
       ]
     },
@@ -200,7 +197,7 @@
         {
           "deviceId": 1,
           "buttonId": 31,
-          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus"
+          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus / Flydigi: M2"
         }
       ]
     },
@@ -210,7 +207,7 @@
         {
           "deviceId": 1,
           "buttonId": 32,
-          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus"
+          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus / Flydigi: M1"
         }
       ]
     },
@@ -1098,7 +1095,7 @@
         "hardware": {
           "deviceId": 1,
           "buttonId": 11,
-          "description": "XB, Nintendo: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+          "description": "XB, Nintendo, Flydigi: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
         }
       },
       "hardware": {
@@ -1110,7 +1107,7 @@
         "hardware": {
           "deviceId": 1,
           "buttonId": 29,
-          "description": "XB: LeftUpperPaddle / JoyCon: Left SL"
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL / Flydigi: M4"
         }
       },
       "hardware": {
@@ -1122,7 +1119,7 @@
         "hardware": {
           "deviceId": 1,
           "buttonId": 30,
-          "description": "XB: RightUpperPaddle / JoyCon: Right SR"
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR / Flydigi: M3"
         }
       },
       "hardware": {
@@ -1134,7 +1131,7 @@
         "hardware": {
           "deviceId": 1,
           "buttonId": 31,
-          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus"
+          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus / Flydigi: M2"
         }
       },
       "hardware": {
@@ -1146,7 +1143,7 @@
         "hardware": {
           "deviceId": 1,
           "buttonId": 32,
-          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus"
+          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus / Flydigi: M1"
         }
       },
       "hardware": {

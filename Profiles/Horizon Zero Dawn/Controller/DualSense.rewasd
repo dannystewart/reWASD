@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3.0,
-  "appVersion": "6.0.1",
+  "appVersion": "6.1.0",
   "config": {
     "appName": "Horizon Zero Dawn",
     "processNames": [
@@ -63,7 +63,12 @@
   "shifts": [
     {
       "id": 1,
-      "type": "default",
+      "type": "default"
+    }
+  ],
+  "masks": [
+    {
+      "id": 1,
       "set": [
         {
           "deviceId": 1,
@@ -71,11 +76,9 @@
           "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
         }
       ]
-    }
-  ],
-  "masks": [
+    },
     {
-      "id": 1,
+      "id": 2,
       "set": [
         {
           "deviceId": 1,
@@ -85,7 +88,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "set": [
         {
           "deviceId": 1,
@@ -95,7 +98,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "set": [
         {
           "deviceId": 1,
@@ -105,7 +108,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "set": [
         {
           "deviceId": 1,
@@ -115,7 +118,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "set": [
         {
           "deviceId": 1,
@@ -125,7 +128,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "set": [
         {
           "deviceId": 1,
@@ -135,7 +138,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "set": [
         {
           "deviceId": 1,
@@ -147,9 +150,7 @@
   ],
   "mappings": [
     {
-      "description": "Craft Ammo",
       "condition": {
-        "shiftId": 1,
         "mask": {
           "id": 1,
           "activator": {
@@ -158,15 +159,27 @@
           }
         }
       },
-      "macros": [
-        {
-          "gamepad": {
-            "id": 1,
-            "buttonId": 1,
-            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+      "jumpToLayer": {
+        "layer": 1
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "release",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
           }
         }
-      ]
+      },
+      "jumpToLayer": {
+        "layer": 0
+      }
     },
     {
       "description": "Craft Ammo",
@@ -191,11 +204,33 @@
       ]
     },
     {
-      "description": "Weapon Wheel Up",
+      "description": "Craft Ammo",
       "condition": {
         "shiftId": 1,
         "mask": {
           "id": 3,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 1,
+            "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Weapon Wheel Up",
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 4,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -219,7 +254,7 @@
       "condition": {
         "shiftId": 1,
         "mask": {
-          "id": 4,
+          "id": 5,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -243,7 +278,7 @@
       "condition": {
         "shiftId": 1,
         "mask": {
-          "id": 5,
+          "id": 6,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -267,7 +302,7 @@
       "condition": {
         "shiftId": 1,
         "mask": {
-          "id": 6,
+          "id": 7,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
@@ -291,7 +326,7 @@
       "condition": {
         "shiftId": 1,
         "mask": {
-          "id": 7,
+          "id": 8,
           "activator": {
             "type": "single",
             "mode": "hold_until_release"
